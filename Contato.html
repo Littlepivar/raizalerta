@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Raiz Alerta — Contato</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="site-header">
+<div class="brand">Raiz Alerta</div>
+<nav class="nav">
+<a href="index.html">Início</a>
+<a href="galeria.html">Galeria</a>
+<a href="usuario.html">Área do usuário</a>
+<a href="contato.html" class="active">Contato</a>
+</nav>
+</header>
 
-    <header>
-        <h1>Contato</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contato.html" class="active">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="container">
+<main class="container">
+<section class="contact-hero">
+<h1>Fale conosco</h1>
+<p>Tem interesse no projeto, parceria ou dúvida técnica? Manda uma mensagem!</p>
 
-        <h2>Fale Conosco</h2>
-        <p>Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
 
-        <form id="contactForm" class="formulario">
+<form id="contactForm" class="contact-form">
+<input type="text" id="c-name" placeholder="Nome" required>
+<input type="email" id="c-email" placeholder="E-mail" required>
+<textarea id="c-msg" rows="6" placeholder="Mensagem" required></textarea>
+<button class="btn" type="submit">Enviar mensagem</button>
+</form>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+<div class="contact-info">
+<h3>Redes sociais</h3>
+<p>Twitter: <a href="#">@RaizAlerta</a></p>
+<p>Instagram: <a href="#">@RaizAlerta</a></p>
+<p>LinkedIn: <a href="#">Raiz Alerta</a></p>
+</div>
+</section>
+</main>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
 
-            <button type="submit">Enviar</button>
+<footer class="site-footer">
+<div>© 2025 Raiz Alerta</div>
+</footer>
 
-        </form>
 
-    </main>
-
-    <footer>
-        <p>© 2025 Raiz Alerta. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
