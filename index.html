@@ -1,115 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Raiz Alerta — Início</title>
-
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Chart.js para gráficos -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiz Alerta — Início</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="brand">Raiz Alerta</div>
-    <nav class="nav">
-      <a href="index.html" class="active">Início</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="usuario.html">Área do usuário</a>
-      <a href="contato.html">Contato</a>
+
+<header>
+    <h1>Raiz Alerta</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+	    <li><a href="usuario.html">Usuário</a></li>
+
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Monitoramento inteligente da saúde das plantas</h1>
+<main class="container">
+
+    <section class="card">
+        <h2>Monitoramento Inteligente de Plantações</h2>
         <p>
-          O <strong>Raiz Alerta</strong> coleta dados em tempo real sobre umidade, nutrientes, luz e temperatura,
-          permitindo decisões rápidas e precisas para manter a plantação sempre saudável.
+            O Raiz Alerta é um sistema inteligente capaz de monitorar 
+            umidade, pH, temperatura e luminosidade das plantas em tempo real,
+            permitindo acompanhamento remoto e alertas automáticos.
         </p>
-
-        <div class="cta-row">
-          <a class="btn" href="usuario.html">Ver painel demo</a>
-          <a class="btn btn-outline" href="galeria.html">Ver protótipo</a>
-        </div>
-
-        <!-- Login -->
-        <div class="login-card">
-          <h3>Login rápido</h3>
-          <form id="loginForm">
-            <input type="email" id="email" placeholder="seu@exemplo.com" required>
-            <input type="password" id="password" placeholder="Senha" required>
-            <div class="form-actions">
-              <button class="btn" type="submit">Entrar</button>
-              <a href="#" class="small">Criar conta</a>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="device-mock">
-          <!-- MOCKUP básico em SVG -->
-          <img
-            src="data:image/svg+xml;utf8,
-            <svg xmlns='http://www.w3.org/2000/svg' width='500' height='350'>
-              <rect width='100%' height='100%' rx='16' fill='%23ffffff' stroke='%23805a3b' stroke-width='6'/>
-              <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
-              fill='%23805a3b' font-family='Arial' font-size='20'>
-                Painel Raiz Alerta (demo)
-              </text>
-            </svg>"
-            alt="Mockup do painel"
-          />
-        </div>
-      </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
-    <section class="about">
-      <h2>Como funciona</h2>
-      <div class="grid-3">
+    <section class="cards">
         <div class="card">
-          <h4>Sensores inteligentes</h4>
-          <p>Coleta de umidade, temperatura, pH e luz diretamente do solo e da planta.</p>
+            <h3>Monitoramento em tempo real</h3>
+            <p>Sensores coletam dados continuamente.</p>
         </div>
+
         <div class="card">
-          <h4>Análise em tempo real</h4>
-          <p>Processamento dos dados por algoritmo central com alertas automáticos.</p>
+            <h3>Alertas automáticos</h3>
+            <p>Aviso imediato sobre problemas na plantação.</p>
         </div>
+
         <div class="card">
-          <h4>Monitoramento remoto</h4>
-          <p>Acompanhe sua plantação via celular ou computador de qualquer lugar.</p>
+            <h3>Acesso remoto</h3>
+            <p>Painel completo disponível online.</p>
         </div>
-      </div>
     </section>
 
-    <!-- BENEFÍCIOS -->
-    <section class="features">
-      <h2>Benefícios</h2>
-      <ul class="feature-list">
-        <li>Redução do desperdício de água</li>
-        <li>Controle preciso de nutrientes</li>
-        <li>Maior produtividade e saúde vegetal</li>
-        <li>Alertas personalizados e automáticos</li>
-      </ul>
-    </section>
-  </main>
+</main>
 
-  <footer class="site-footer">
-    <div>© 2025 Raiz Alerta — Todos os direitos reservados</div>
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-    </div>
-  </footer>
+<footer>
+    <p>© 2025 Raiz Alerta — Todos os direitos reservados.</p>
+</footer>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
